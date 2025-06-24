@@ -1,7 +1,70 @@
-/** CSS STYLE **/
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
-.hello {
-  display: block;
+@font-face {
+  font-family: "Neucha";
+  src: url("../fonts/Neucha-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  color: #fff;
+:root {
+  /* Основные цвета */
+  --color-white: #fff;
+  --color-semi-transparent-white: #d7ccc0;
+  --color-light: #f5f4f0;
+  --color-primary: #fe8a02;
+  --color-primary-dark: #42413c;
+  --color-dark: #2a2626;
+  --color-semi-transparent-dark: #908d8b;
+  --color-brown: #b09a81;
+  --color-blue: #1085c5;
+
+  /* Шрифты */
+  --font-main: "Open Sans", sans-serif;
+  --font-heading: "Neucha", cursive;
+
+  /* Размеры и отступы */
+  --font-size-base: 16px;
+  --line-height-base: 1.6em;
+  --line-height-heading: 1.2em;
+  --section-padding: 100px;
+  --max-content-width: 1110px;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-dark);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  line-height: var(--line-height-heading);
+  margin: 0;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+section {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: var(--section-padding) 0;
 }
