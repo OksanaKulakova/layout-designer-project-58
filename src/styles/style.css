@@ -63,8 +63,24 @@ h3 {
   font-size: 34px;
 }
 
-section {
+.content {
   max-width: var(--max-content-width);
   margin: 0 auto;
   padding: var(--section-padding) 0;
+}
+
+.section--with-bg {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg--light {
+  background-color: var(--color-light);
+}
+
+.bg--brown {
+  background-color: var(--color-brown);
+  color: var(--color-white);
 }
