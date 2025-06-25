@@ -102,6 +102,11 @@ h3 {
   color: var(--color-white);
 }
 
+.bg-white {
+  background-color: var(--color-white);
+  color: var(--color-brown);
+}
+
 .text-primary {
   color: var(--color-primary);
 }
@@ -227,6 +232,10 @@ h3 {
   font-family: var(--font-heading);
 }
 
+.section-title.revert {
+  flex-direction: row-reverse;
+}
+
 .section-title img {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
@@ -234,6 +243,10 @@ h3 {
 .section-title .tag {
   font-size: 24px;
   color: var(--color-semi-transparent-dark);
+}
+
+.section-title .tag.light {
+  color: var(--color-semi-transparent-white);
 }
 
 .section-title p {
@@ -253,6 +266,7 @@ h3 {
 
   font-family: var(--font-main);
   font-size: 14px;
+  font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
 }
