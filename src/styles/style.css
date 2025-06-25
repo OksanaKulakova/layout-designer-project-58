@@ -1,7 +1,8 @@
 @font-face {
   font-weight: 400;
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format("opentype"),
+  src:
+    url("../fonts/OpenSans/OpenSans-Regular.ttf") format("opentype"),
     url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"),
     url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2");
 }
@@ -9,7 +10,8 @@
 @font-face {
   font-weight: 700;
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans/OpenSans-Bold.ttf") format("opentype"),
+  src:
+    url("../fonts/OpenSans/OpenSans-Bold.ttf") format("opentype"),
     url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"),
     url("../fonts/OpenSans/OpenSans-Bold.woff2") format("woff2");
 }
@@ -17,13 +19,13 @@
 @font-face {
   font-weight: 400;
   font-family: Neucha;
-  src: url("../fonts/Neucha/Neucha-Regular.ttf") format("opentype"),
+  src:
+    url("../fonts/Neucha/Neucha-Regular.ttf") format("opentype"),
     url("../fonts/Neucha/Neucha-regular.woff") format("woff"),
     url("../fonts/Neucha/Neucha-Regular.woff2") format("woff2");
 }
 
 :root {
-  /* Основные цвета */
   --color-white: #fff;
   --color-semi-transparent-white: #d7ccc0;
   --color-light: #f5f4f0;
@@ -34,11 +36,9 @@
   --color-brown: #b09a81;
   --color-blue: #1085c5;
 
-  /* Шрифты */
   --font-main: "Open Sans", sans-serif;
   --font-heading: "Neucha", cursive;
 
-  /* Размеры и отступы */
   --font-size-base: 16px;
   --line-height-base: 1.6em;
   --line-height-heading: 1.2em;
@@ -54,7 +54,6 @@ body {
   color: var(--color-dark);
   margin: 0;
   padding: 0;
-  /* overflow-x: hidden; */
 }
 
 h1,
@@ -237,6 +236,15 @@ header {
   padding: 24px;
 }
 
+.card h3 {
+  letter-spacing: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+  letter-spacing: 0;
+}
+
 .card:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -246,15 +254,6 @@ header {
 .card:hover h3 {
   color: var(--color-white);
   transition: all 0.3s ease;
-}
-
-.card h3 {
-  letter-spacing: 0;
-}
-
-.card p {
-  margin-bottom: 0;
-  letter-spacing: 0;
 }
 
 .card-number {
@@ -270,12 +269,26 @@ header {
   font-family: var(--font-heading);
 }
 
+
 .section-title.revert {
   flex-direction: row-reverse;
 }
 
+.section-title h2 {
+  margin-bottom: 30px;
+}
+
 .section-title img {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.section-title p {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0;
+
+  margin: 0;
 }
 
 .section-title .tag {
@@ -289,19 +302,6 @@ header {
 
 .section-title .tag.light {
   color: var(--color-semi-transparent-white);
-}
-
-.section-title p {
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0;
-
-  margin: 0;
-}
-
-.section-title h2 {
-  margin-bottom: 30px;
 }
 
 .section-subtitle {
