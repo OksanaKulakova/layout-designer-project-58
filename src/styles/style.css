@@ -224,6 +224,10 @@ header .content {
   transition: all 0.3s ease;
 }
 
+.card p {
+  margin-bottom: 0;
+}
+
 .card-number {
   font-family: var(--font-heading);
   font-size: 64px;
