@@ -163,12 +163,14 @@ header {
   margin-top: 0;
 }
 
+.columns-2 p:last-of-type {
+  margin-bottom: 40px;
+}
+
 .link {
   display: inline-block;
   padding: 12px 24px;
   background-color: var(--color-primary);
-
-  margin-top: 24px;
 
   font: 16px/1.6em "Open Sans", sans-serif;
   font-weight: 700;
