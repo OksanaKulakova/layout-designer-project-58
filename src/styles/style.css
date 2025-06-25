@@ -72,6 +72,7 @@ header .content {
   flex-direction: column;
   justify-content: space-between;
   gap: 188px;
+  height: 714px;
 }
 
 .content {
@@ -94,6 +95,7 @@ header .content {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
+  z-index: -1;
 }
 
 .bg--light {
