@@ -152,7 +152,7 @@ header {
 .columns-2 {
   display: flex;
   gap: 30px;
-  margin-top: 200px;
+  margin-top: 195px;
 }
 
 .columns-2 > div {
