@@ -183,6 +183,18 @@ header {
   color: var(--color-dark);
 }
 
+.subscription-section {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.subscription-section h3 {
+  flex: 1;
+}
+
 .card {
   padding: 24px;
 }
@@ -225,7 +237,6 @@ header {
   gap: 30px;
   font-family: var(--font-heading);
 }
-
 
 .section-title.revert {
   flex-direction: row-reverse;
@@ -284,18 +295,6 @@ header {
   flex: 1;
   margin: 0;
   line-height: 25px;
-}
-
-.subscription-section {
-  padding: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-}
-
-.subscription-section h3 {
-  flex: 1;
 }
 
 .subscription-form {
