@@ -35,10 +35,8 @@
   --color-semi-transparent-dark: #908d8b;
   --color-brown: #b09a81;
   --color-blue: #1085c5;
-
   --font-main: "Open Sans", sans-serif;
   --font-heading: "Neucha", cursive;
-
   --font-size-base: 16px;
   --line-height-base: 1.6em;
   --line-height-heading: 1.2em;
@@ -107,16 +105,16 @@ header {
   z-index: -1;
 }
 
-.bg--light {
+.bg-light {
   background-color: var(--color-light);
 }
 
-.bg--brown {
+.bg-brown {
   background-color: var(--color-brown);
   color: var(--color-white);
 }
 
-.bg--dark {
+.bg-dark {
   background-color: var(--color-primary-dark);
   color: var(--color-white);
 }
@@ -148,24 +146,6 @@ header {
   z-index: 1;
 }
 
-.columns-2 {
-  display: flex;
-  gap: 30px;
-  margin-top: 201px;
-}
-
-.columns-2 > div {
-  flex: 1;
-}
-
-.columns-2 p:first-child {
-  margin-top: 0;
-}
-
-.columns-2 p:last-of-type {
-  margin-bottom: 40px;
-}
-
 .link {
   display: inline-block;
   padding: 12px 24px;
@@ -177,35 +157,6 @@ header {
   text-transform: uppercase;
   color: var(--color-white);
   text-decoration: none;
-}
-
-#preview-image {
-  text-align: center;
-}
-
-#preview-image h2 {
-  margin-bottom: 30px;
-}
-
-#preview-image p {
-  margin-bottom: 30px;
-}
-
-#preview-image img {
-  width: 919px;
-  height: 517px;
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
-  vertical-align: middle;
-  margin-bottom: 16px;
-}
-
-#navigation {
-  margin-top: -216px;
-  padding-top: 100px;
-}
-
-#navigation h2 {
-  font-size: 52px;
 }
 
 .nav {
@@ -261,6 +212,12 @@ header {
   font-size: 64px;
   line-height: 1;
   margin-bottom: 40px;
+}
+
+.columns-2 {
+  display: flex;
+  gap: 30px;
+  margin-top: 201px;
 }
 
 .section-title {
@@ -402,4 +359,45 @@ header {
 
 .contacts a {
   color: var(--color-blue);
+}
+
+.columns-2 > div {
+  flex: 1;
+}
+
+.columns-2 p:first-child {
+  margin-top: 0;
+}
+
+.columns-2 p:last-of-type {
+  margin-bottom: 40px;
+}
+
+#preview-image {
+  text-align: center;
+}
+
+#preview-image h2 {
+  margin-bottom: 30px;
+}
+
+#preview-image p {
+  margin-bottom: 30px;
+}
+
+#preview-image img {
+  width: 919px;
+  height: 517px;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  vertical-align: middle;
+  margin-bottom: 16px;
+}
+
+#navigation {
+  margin-top: -216px;
+  padding-top: 100px;
+}
+
+#navigation h2 {
+  font-size: 52px;
 }
