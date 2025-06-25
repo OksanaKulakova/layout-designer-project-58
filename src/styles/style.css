@@ -136,6 +136,11 @@ header {
   z-index: 2;
 }
 
+.main-title h1 {
+  position: relative;
+  z-index: 3;
+}
+
 .main-img {
   position: absolute;
   top: 55px;
@@ -163,7 +168,7 @@ header {
   padding: 12px 24px;
   background-color: var(--color-primary);
 
-  margin-top: 20px;
+  margin-top: 24px;
 
   font: 16px/1.6em "Open Sans", sans-serif;
   font-weight: 700;
