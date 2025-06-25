@@ -134,6 +134,11 @@ header {
 .main {
   position: relative;
   z-index: 2;
+  min-height: 914px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-title h1 {
@@ -152,14 +157,13 @@ header {
 .columns-2 {
   display: flex;
   gap: 30px;
-  margin-top: 204px;
 }
 
 .columns-2 > div {
   flex: 1;
 }
 
-.columns-2 p {
+.columns-2 p:first-child {
   margin-top: 0;
 }
 
@@ -197,11 +201,12 @@ header {
   height: 517px;
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
   vertical-align: middle;
+  margin-bottom: 16px;
 }
 
 #navigation {
-  margin-top: -200px;
-  padding-top: 100px;
+  margin-top: -216px;
+  padding-top: 108px;
 }
 
 #navigation h2 {
@@ -225,7 +230,7 @@ header {
 }
 
 .nav-item a {
-  display: block;
+  display: flex;
   text-decoration: none;
   flex-direction: column;
   flex-grow: 1;
@@ -237,17 +242,24 @@ header {
 }
 
 .card:hover {
-  background-color: var(--color-white);
+  background-color: var(--color-primary);
+  color: var(--color-white);
   transition: all 0.3s ease;
 }
 
 .card:hover h3 {
-  color: var(--color-dark);
+  color: var(--color-white);
   transition: all 0.3s ease;
 }
 
+.card h3 {
+  margin-bottom: 12px;
+  letter-spacing: 0;
+}
+
 .card p {
-  margin-bottom: 0;
+  margin: 0;
+  letter-spacing: 0;
 }
 
 .card-number {
