@@ -279,7 +279,11 @@ header {
 }
 
 .section-title .tag {
+  font-weight: 400;
   font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0;
+
   color: var(--color-semi-transparent-dark);
 }
 
@@ -288,8 +292,11 @@ header {
 }
 
 .section-title p {
+  font-weight: 400;
   font-size: 34px;
-  line-height: var(--line-height-heading);
+  line-height: 40px;
+  letter-spacing: 0;
+
   margin: 0;
 }
 
@@ -303,9 +310,11 @@ header {
   padding: 5px 10px;
 
   font-family: var(--font-main);
+
+  font-weight: 700;
   font-size: 14px;
-  font-weight: bold;
   line-height: 16px;
+  vertical-align: middle;
   text-transform: uppercase;
 }
 
@@ -316,7 +325,8 @@ header {
 
 .secton-text p {
   flex: 1;
-  margin-top: 0;
+  margin: 0;
+  line-height: 25px;
 }
 
 .subscription-section {
